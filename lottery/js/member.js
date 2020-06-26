@@ -1,114 +1,20 @@
-var member = [
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.2'
-  },
-  {
-    name:'阿航',
-    phone:'No.3'
-  },
-  {
-    name:'阿航',
-    phone:'No.4'
-  },
-  {
-    name:'阿航',
-    phone:'No.5'
-  },
-  {
-    name:'阿航',
-    phone:'No.6'
-  },  {
-    name:'阿航',
-    phone:'No.7'
-  },
-  {
-    name:'阿航',
-    phone:'No.8'
-  },
-  {
-    name:'阿航',
-    phone:'No.9'
-  },  {
-    name:'阿航',
-    phone:'No.10'
-  },
-  {
-    name:'阿航',
-    phone:'No.11'
-  },
-  {
-    name:'阿航',
-    phone:'No.12'
-  },  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-  {
-    name:'阿航',
-    phone:'No.1'
-  },
-]
+
+var getMembers = function () {
+    return new Promise((resolve, reject) => {
+        var test = [
+            '阿航','绣绣','小霞','意雅','阿飞','程寻','章绣','毛飞','郑可航','舒语','阿雄','易小霞','郑小霞','妥妥','以默',
+            '阿航','绣绣','小霞','意雅','阿飞','程寻','章绣','毛飞','郑可航','舒语','阿雄','易小霞','郑小霞','妥妥','以默',
+            '阿航','绣绣','小霞','意雅','阿飞','程寻','章绣','毛飞','郑可航','舒语','阿雄','易小霞','郑小霞','妥妥','以默',
+            '阿航','绣绣','小霞','意雅','阿飞','程寻','章绣','毛飞','郑可航','舒语','阿雄','易小霞','郑小霞','妥妥','以默',
+            '阿航','绣绣','小霞','意雅','阿飞','程寻','章绣','毛飞','郑可航','舒语','阿雄','易小霞','郑小霞','妥妥','以默',
+        ]
+        resolve(
+            test.map((item,index) => {
+                return {
+                    name: item,
+                    phone: `No.${index}`
+                }
+            })
+        )
+    })
+}
